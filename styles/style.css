@@ -1,0 +1,84 @@
+body {
+  margin: 0 auto;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.panel {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  padding: 0.525rem;
+}
+.panel-item {
+  width: 100%;
+  border: 1px solid #000;
+  background-color: lightgray;
+  margin-bottom: 0.325rem;
+  padding: 0.525rem;
+}
+.panel-item:last-child {
+  height: 100%;
+  margin-bottom: 0;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.panel .drone-setup {
+  display: flex;
+  flex-direction: column;
+}
+.panel .drone-queue {
+  display: flex;
+  flex-direction: column;
+}
+.panel .drone-queue_item {
+  margin-bottom: 0.325rem;
+  border: 1px solid #000;
+  background-color: lightblue;
+  padding: 0.325rem;
+}
+.panel .drone-queue_item span {
+  margin-left: 0.325rem;
+}
+.panel .drone-queue_item:last-child {
+  margin-bottom: 0;
+}
+
+#map {
+  height: 100vh;
+  width: 100%;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}/*# sourceMappingURL=style.css.map */

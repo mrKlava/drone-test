@@ -1,0 +1,104 @@
+body {
+
+  margin: 0 auto;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.panel {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+
+  background-color: gray;
+
+  padding: .525rem;
+
+  &-item {
+    width: 100%;
+    border: 1px solid #000;
+    background-color: lightgray;
+    margin-bottom: .325rem;
+    padding: .525rem;
+    
+    &:last-child {
+      height: 100%;
+      margin-bottom: 0;
+
+      overflow:scroll;
+      overflow-x: hidden;
+    }
+  }
+
+  .drone {
+    &-setup {
+      display: flex;
+      flex-direction: column;
+
+
+    }
+
+    &-queue {
+      display: flex;
+      flex-direction: column;
+
+      &_item {
+        margin-bottom: .325rem;
+
+        border: 1px solid #000;
+        background-color: lightblue;
+
+        padding: .325rem;
+
+        span {
+          margin-left: .325rem;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    
+  }
+}
+
+#map {
+  height: 100vh;
+  width: 100%;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: .5rem;
+}
